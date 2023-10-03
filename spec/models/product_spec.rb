@@ -1,6 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
+  before(:all) do
+    @product = Product.create(name: "Rspec testcases")
+
   before(:each) do
     @product = Product.create(name:"Rspec testcases")
     # expect(Product.find_by_name("Rspec testcases")).to eq(@product)
