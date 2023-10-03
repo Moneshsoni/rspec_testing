@@ -53,7 +53,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'rspec-rails'
 end
-
+gem 'paperclip'
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
@@ -74,5 +74,5 @@ group :test do
   gem 'rails-controller-testing',     '~> 1.0.2'
   gem 'shoulda-callback-matchers',    '~> 1.1', '>= 1.1.3'
   gem 'simplecov',                    '~> 0.15.1',              require: false
-
+  gem 'shoulda-matchers', '~> 5.0'
 end
