@@ -20,4 +20,13 @@ RSpec.describe Product, type: :model do
     expect(Product.find_by_name("updated Rspec testcases")).to eq(@product)
   end
 
+  it 'checks the product coutn' do
+    expect(Product.count).to eq(1)
+  end
+
+  it 'Check that record is deleted or not' do
+    @product.destroy
+    expect(Product.count).to eq(0)
+  end
+
 end
